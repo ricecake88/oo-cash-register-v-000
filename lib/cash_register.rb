@@ -25,6 +25,7 @@ class CashRegister
   end
   
   def items
+    puts @list_of_items
     @list_of_items
   end
 end
