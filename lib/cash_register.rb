@@ -19,10 +19,11 @@ class CashRegister
    # binding.pry
     if self.discount != 0
       self.total = self.total - self.total * (self.discount/100.0)
-      puts "After the discount, the total comes to $#{self.total.to_i}."
+      message = "After the discount, the total comes to $#{self.total.to_i}."
     else
-      puts "There is no discount to apply."
+      message = "There is no discount to apply."
     end
+    return message
   end
   
   def items
