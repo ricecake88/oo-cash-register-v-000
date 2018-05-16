@@ -12,11 +12,9 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     self.total += (price)*quantity
     @list_of_items << title
-    puts title
   end
   
   def apply_discount
-   # binding.pry
     if self.discount != 0
       self.total = self.total - self.total * (self.discount/100.0)
       message = "After the discount, the total comes to $#{self.total.to_i}."
