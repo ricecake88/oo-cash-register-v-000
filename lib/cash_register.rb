@@ -23,4 +23,8 @@ class CashRegister
       puts "There is no discount to apply."
     end
   end
+  
+  def items
+    self.list_of_items
+  end
 end
